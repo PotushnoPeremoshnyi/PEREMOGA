@@ -1,8 +1,7 @@
 function removeElement(array, item) {
-  for (let a = 0; a < array.length; a++) {
-    if (array[a] === item) {
-      array.splice(a, 1);
-      a--;
-    }
-  }
+const index = array.indexOf(item);
+if (index !== -1) {
+array.splice(index, 1);
+}
+return array;
 }
